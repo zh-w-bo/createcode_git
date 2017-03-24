@@ -1,0 +1,260 @@
+@charset "utf-8";
+.tabletr_center{
+	text-align:center;
+	vertical-align:middle;
+}
+#dt_FullTrack th{
+	text-align:center;
+	vertical-align:middle;
+}
+#dataTable th{
+	text-align:center;
+	vertical-align:middle;
+}
+.tr_success{
+	background-color:#2379BF;
+	color:#fff;
+}
+.tr_error{
+	background-color:red;
+	color:#fff;
+}
+td.details-control {
+    background: url('../images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('../images/details_close.png') no-repeat center center;
+}
+
+td.full-control {
+    background: url('../images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.full-control {
+    background: url('../images/details_close.png') no-repeat center center;
+}
+td.less-control {
+    background: url('../images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.less-control {
+    background: url('../images/details_close.png') no-repeat center center;
+}
+table th {
+height:30xp;
+	font-size:15px;
+	color: #333333;
+}
+th{white-space:nowrap;}
+td{white-space:nowrap; height:38px}
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", 		SimHei, "\5B8B\4F53", simsun, sans-serif;
+	color: #666;
+}
+.logo { padding:0;}
+.navbar-header img{ display:block; width:100%; height:100%;}
+#myCarousel{ margin: 50px 0 0 0;}
+#navbar-collapse ul { margin-top:0;}
+.carousel-inner img { margin: 0 auto; width:100%;}
+
+.tab-h2 {
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #0059b2;
+}
+.tab-p {
+	font-size: 15px;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #999;
+	margin: 20px 0 40px 0;
+}
+.tab1 {
+	margin: 30px 0;
+	color: #666;
+}
+.tab1 .text-muted {
+	color: #999;
+	text-decoration: line-through;
+}
+.tab1 .media-heading {
+	margin: 5px 0 20px 0;
+}
+.tab1 .col {
+	padding: 20px;
+}
+
+.tab2 {
+	background:#EEEEEE;
+	margin:40px 0 0 0;
+	padding: 70px 20px;
+	text-align: center;
+}
+.text h3 {
+	font-size: 20px;
+}
+.text p {
+	font-size: 14px;
+}
+
+/*footer底部样式开始*/
+#footer {
+	color:#f1f1f1;
+    background: #222222;
+    border-top: 4px solid #222222;
+    font-size: 0.9em;
+    margin-top: 50px;
+    padding: 70px 0 0;
+    position: relative;
+    clear: both;
+}
+
+#footer.short { padding-top: 50px;}
+
+.myUl ul li{ height:30px; line-height:30px;}
+
+footer p {
+	color: #f1f1f1;
+	line-height: 24px;
+	margin: 0 0 20px;
+}
+
+p.featured {
+	font-size: 1.6em;
+	line-height: 1.5em;
+}
+
+p.short {
+	margin-bottom: 0;
+}
+
+p.tall {
+	margin-bottom: 20px;
+}
+
+p.taller {
+	margin-bottom: 40px;
+}
+
+p .alternative-font {
+	display: inline-block;
+	margin-top: -15px;
+	position: relative;
+	top: 3px;
+	margin-bottom: -6px;
+}
+a{ color:#F1F1F1;}
+
+a:hover{ color:#E98C02; text-decoration:none;}
+
+.container .row p.footer ,.mySpan{ text-align:center;}
+/*footer底部样式开始*/
+
+
+/* 小屏幕（平板，大于等于768px） */
+@media (min-width: 768px) {
+	.tab-h2 {
+		font-size: 26px;
+	}
+	.tab-p {
+		font-size: 16px;
+	}
+	.text h3 {
+		font-size: 22px;
+	}
+	.text p {
+		font-size: 15px;
+	}
+	.tab2-text {
+		float: left;
+	}
+	.tab2-img {
+		float: right;
+	}
+	.jumbotron h1 {
+		font-size: 30px;
+	}
+	.jumbotron h4 {
+		font-size: 16px;
+	}
+	.info-content h4 {
+		font-size: 16px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	#about h3 {
+		font-size: 19px;
+	}
+	#about p {
+		font-size: 14px;
+	}
+}
+
+/* 中等屏幕（桌面显示器，大于等于992px） */
+@media (min-width: 992px) {
+	.tab-h2 {
+		font-size: 28px;
+	}
+	.tab-p {
+		font-size: 17px;
+	}
+	.text h3 {
+		font-size: 24px;
+	}
+	.text p {
+		font-size: 16px;
+	}
+	.jumbotron h1 {
+		font-size: 33px;
+	}
+	.jumbotron h4 {
+		font-size: 17px;
+	}
+	.info-content h4 {
+		font-size: 18px;
+	}
+	#about h3 {
+		font-size: 20px;
+	}
+	#about p {
+		font-size: 15px;
+	}
+}
+
+/* 大屏幕（大桌面显示器，大于等于1200px） */
+@media (min-width: 1200px) {
+	.tab-h2 {
+		font-size: 30px;
+	}
+	.tab-p {
+		font-size: 18px;
+	}
+	.text h3 {
+		font-size: 26px;
+	}
+	.text p {
+		font-size: 18px;
+	}
+	.jumbotron h1 {
+		font-size: 36px;
+	}
+	.jumbotron h4 {
+		font-size: 18px;
+	}
+	.info-content h4 {
+		font-size: 20px;
+	}
+	#about h3 {
+		font-size: 22px;
+	}
+	#about p {
+		font-size: 16px;
+	}
+}
+ 
+
+
+ 

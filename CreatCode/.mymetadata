@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="CreatCode"
+  id="myeclipse.1490253961973"
+  context-root="/CreatCode"
+  j2ee-spec="6.0"
+  archive="CreatCode.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

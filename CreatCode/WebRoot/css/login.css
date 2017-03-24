@@ -1,0 +1,217 @@
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,input,button,fieldset, legend,img { margin:0; padding:0; }
+h1,h2,h3,h4,h5,h6{ font-size:14px;}
+fieldset,img{ border:none; }
+img{display:block; }
+em{ font-style:normal;}
+ul,ol{list-style:none; }
+a{ color:#666; text-decoration:none;}
+a:hover{ color:red;}
+body{
+	font-family: "微软雅黑";
+	background:url(../images/index_bg.jpg) no-repeat;
+	background-size:100%;
+}
+
+/*login登录样式开始*/
+h1{
+	width:200px;
+	height:68px;
+	background:url(../images/logo.png) no-repeat;
+	text-indent:-9999px;
+	margin-left:45px;
+	}
+
+.nav-r{
+	width:600px;
+	height:300px;
+	position: fixed;
+    left:50%;
+    top: 50%;
+	text-align:center;
+	margin-left:-300px;
+	margin-top:-150px;
+	}
+.nav-r h2{
+	font-size:50px;
+	font-weight:normal;
+	text-align:center;
+	color:#fff;
+	}
+.p1{
+	color:#fff;
+	font-size:14px;
+	margin:20px 0 70px 0;
+	}
+.loginmmd,.loginmmd1,.loginmmd2{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	font-size:18px;
+	margin: 30px 15px 0 65px;
+	float: left;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #EC5D01;
+}
+.loginmmd1{
+		width: 148px;
+		height: 48px;
+		margin-left:0;
+		background: 0;
+		border:#fff solid 2px;
+		-webkit-transition: all 1s;
+	}
+.loginmmd2{
+		width: 148px;
+		height: 48px;
+		margin-left:0;
+		background: 0;
+		border:#fff solid 2px;
+		-webkit-transition: all 1s;
+	}
+.loginmmd1:hover{ background-color: #fff;}
+.loginmmd2:hover{ background-color: #fff;}
+.nav-r a{color: #fff;}
+.nav-r a:hover{color: #fff; text-decoration: none;}
+.nav-r a.loginmmd:hover{ background-color:#CB5205;}
+.nav-r a.loginmmd1:hover{color: #EC5D01;}
+.nav-r a.loginmmd2:hover{color: #EC5D01;}
+.down{
+	width:100%;
+	height:100%;
+    position:fixed;
+    background-color:#000;
+    z-index:100;
+	display:none;
+  }
+.login{ 
+	width:350px;
+	height:335px;
+	background:#fff;
+	position: fixed;
+    left:50%;
+    top: 50%;
+	margin-left:-200px;
+	margin-top:-150px;
+	z-index:1000;
+	border-radius:5px;
+	/* display:none; */
+	}
+.closeBtn{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 10px;
+    top: 13px;
+	background:url(../images/denglu-bg.png);
+    cursor: pointer;
+  }
+.closeBtnRokin{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 10px;
+    top: 13px;
+	background:url(../images/denglu-bg.png);
+    cursor: pointer;
+  }
+.login p.firstP{ 
+	height:60px;
+	line-height:60px;
+	text-align:center;
+	margin-bottom: 0;
+	font-size:22px;
+	color:#007AC3;
+	}
+/*下面username_result校验用户名*/
+#username_result{
+	display: block;
+	text-align:center;
+	color: red;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+#username_result_rokin{
+	display: block;
+	text-align:center;
+	color: red;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.login #btn{ 
+	width:290px;
+	height:35px;
+	margin:0 0 2px 32px;
+	display:block; 
+	background:#337AB7;
+	border:0;
+	color:#fff;
+	font-family:微软雅黑;
+	border-radius:3px;
+	cursor:pointer;
+	}
+.login #btn:hover{
+	background:#1066A4;
+}
+
+.login #btn_rokin{ 
+	width:290px;
+	height:35px;
+	margin:0 0 2px 32px;
+	display:block; 
+	background:#337AB7;
+	border:0;
+	color:#fff;
+	font-family:微软雅黑;
+	border-radius:3px;
+	cursor:pointer;
+	}
+.login #btn_rokin:hover{
+	background:#1066A4;
+}
+
+p.last{ 
+	width:290px;
+	height:32px;
+	line-height:32px;
+	display:inline-block;
+	outline-style:none;
+	font-size:12px; 
+	margin-left:35px;
+	 }
+p a{ color:#1066A4;}
+p .wjmm{ margin-left:110px;}
+p .wjmmRokin{ margin-left:220px;}
+
+div.input-group,#pwdDiv.form-group-lg{ width:290px;}
+div.input-group{ margin-left: 31px;}
+.input-group{ margin-left: 18px;}
+.input-group-addon{ padding:0px 12px;}
+.input-lg{ height:42px;}
+
+.myCheckbox{
+    display: block;
+    width:100px;
+    margin-left: 20px;
+    margin-top:5px;
+    min-height: 20px;
+    line-height:20px;
+    font-size:12px;
+    vertical-align: middle;
+}
+.myLabel{padding-left:5px;}
+.myCheckbox #jzw{
+    float: left;
+    margin-left: -5px;
+}
+
+.myCheckbox #jzwRokin{
+    float: left;
+    margin-left: -5px;
+}
+
+.myH1{ margin: 0 0 0 40px;}
+/*login登录样式结束*/
+
