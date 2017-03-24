@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="datatable/css/jquery.dataTables.min.css">
  	<link rel="stylesheet" href="sweetalert/css/sweetalert.css">
   	<link rel="stylesheet" href="css/index.css">
+  	  	<link rel="stylesheet" href="css/login.css">
    	<link type="text/css" rel="stylesheet"  href="toastr/toastr.css"/>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap-datetimepicker.min.css">
 	<link rel="stylesheet" href="bootstrap/css/fileinput.css" type="text/css"></link>

@@ -8,7 +8,7 @@ a{ color:#666; text-decoration:none;}
 a:hover{ color:red;}
 body{
 	font-family: "Î¢ÈíÑÅºÚ";
-	background:url(../images/index_bg.jpg) no-repeat;
+	background-color: #E8F2FE;
 	background-size:100%;
 }
 
@@ -42,12 +42,12 @@ h1{
 	font-size:14px;
 	margin:20px 0 70px 0;
 	}
-.loginmmd,.loginmmd1,.loginmmd2{
-	width: 150px;
+.loginmmd{
+	width: 200px;
 	height: 50px;
 	line-height: 50px;
 	font-size:18px;
-	margin: 30px 15px 0 65px;
+	margin: 30px 15px 0 215px;
 	float: left;
 	text-align: center;
 	border-radius: 5px;
@@ -214,4 +214,18 @@ div.input-group{ margin-left: 31px;}
 
 .myH1{ margin: 0 0 0 40px;}
 /*loginµÇÂ¼ÑùÊ½½áÊø*/
+
+
+.Canvas{
+	margin:0px auto;
+	margin-top:50px;
+	width:500px;
+	hight:200px;
+}
+.Canvas2{
+	margin:0px auto;
+	margin-top:250px;
+	width:500px;
+	hight:200px;
+}
 
