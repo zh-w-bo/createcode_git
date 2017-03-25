@@ -32,27 +32,31 @@
       </div>
       <div class="modal-body">
     <form>
+    <div class="form-group">
+    <label for="exampleInputEmail1">Url</label>
+    <input type="url" name="url_name" id="url_id" class="form-control" id="exampleInputEmail1" value="jdbc:sqlserver://xx:xx;DatabaseName=xx" placeholder="Data Url">
+  </div>
   <div class="form-group">
-    <label for="exampleInputEmail1">username</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="data username">
+    <label for="exampleInputEmail1">Username</label>
+    <input type="text"name="username_name" id="username_id" class="form-control" id="exampleInputEmail1" placeholder="Data Username">
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="data Password">
+    <input type="password" name="password_name" id="password_id"class="form-control" id="exampleInputPassword1" placeholder="Data Password">
   </div>
   <div class="form-group">
    <label for="exampleInputPassword1">Please Select Data</label>
-<select class="form-control">
-  <option>SQL Server</option>
-  <option>Mysql</option>
-  <option>oracle</option>
+<select  id="select_id"  class="form-control" onchange="selectChange()">
+  <option value="0">SQL Server</option>
+  <option value="1">Mysql</option>
+  <option value="2">Oracle</option>
 </select>
   </div>
 </form>
       </div>
       <div class="modal-footer">
-         <button type="button" class="btn btn-primary">Test connect</button>
-        <button type="button" class="btn btn-primary">connect</button>
+         <button type="button" class="btn btn-primary" onclick="testConnectClick()">Test Connect</button>
+        <button type="button" class="btn btn-primary">Connect</button>
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
@@ -60,19 +64,41 @@
 </div>
   </body>
 </html>
-
+	<!--ajax请求js块  -->
+	<script type="text/javascript">
+	function testConnectClick(){
+		  $.ajax({
+             type: "POST",
+             url: "test.json",
+             data: {url:$("#url_id").val(), username:$("#username_id").val(),password:$("#password_id").val(),datatype:$("#select_id option:selected").val()},
+             dataType: "json",
+             success: function(data){
+             
+             }
+     });
+	}
+	</script>
+	<!-- js效果块 -->
     <script type="text/javascript">
+		   function selectChange(){
+		   	   var objS = document.getElementById("select_id");
+		   	   var index = objS.selectedIndex; 
+		   	   if(index==0){
+		   	   		$("#url_id").val("jdbc:sqlserver://xx:xx;DatabaseName=xx");
+		   	   }
+		   	   if(index==1){
+		   	   		$("#url_id").val("jdbc:mysql://xx:xx/xx");
+		   	   }
+		   	   if(index==2){
+		   	   		$("#url_id").val("jdbc:oracle:thin:@localhost:xx:xx");
+		   	   }
+		   }
         	$(".loginmmd").click(function() {
     		$('#myModal').modal("show");
    		 });
     </script>
 
-
-
-
-
-
-
+<!--  -->
        <script text/javascript>
 var c=document.getElementById("myCanvas");
 var ctx=c.getContext("2d");
