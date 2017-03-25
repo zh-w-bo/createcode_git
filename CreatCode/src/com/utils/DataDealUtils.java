@@ -21,44 +21,20 @@ private static final String Oracle_Driver = "oracle.jdbc.driver.OracleDriver";
 	 */
 	public static Connection getData(String dataType,String url,String userName,String password){
 		if(dataType.equals("0")){
-			conn=getSqlServerConn(url,userName,password);
+			try {
+				Class.forName(SqlServer_Driver);
+				conn = DriverManager.getConnection(url, userName, password);
+			} catch (Exception e) {
+				e.printStackTrace();
+				System.out.println("连接sqlserver失败");
+			}
 		}
 		if(dataType.equals("1")){
-			getMysqlConn();
+			
 		}
 		if(dataType.equals("2")){
-			getOracleConn();
+			
 		}
 		return conn;
 	}
-	/**
-	 * 获取SqlServer Connection链接
-	 * @return 
-	 */
-	private static Connection getSqlServerConn(String url,String userName,String password) {
-		// TODO Auto-generated method stub
-		try {
-			Class.forName(SqlServer_Driver);
-			conn = DriverManager.getConnection(url, userName, password);
-		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println("连接sqlserver失败");
-		}
-		return conn;
-	}
-	/**
-	 * 获取mysql Connection链接
-	 */
-	private static void getMysqlConn() {
-		// TODO Auto-generated method stub
-		
-	}
-	/**
-	 * 获取Oracle Connection链接
-	 */
-	private static void getOracleConn() {
-		// TODO Auto-generated method stub
-		
-	}
-
 }
